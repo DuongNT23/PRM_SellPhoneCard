@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.prm392_project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PRM392_Project"
+        tools:targetApi="31">
+        <activity
+            android:name=".InforCard"
+            android:exported="false"
+            android:label="INFORMATION OF CARD"
+            android:parentActivityName=".Navigation_Home"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".Feedback"
+            android:exported="true"
+            android:label="Feedback"
+            android:parentActivityName=".Feedback"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".GgMap"
+            android:exported="false" />
+        <activity
+            android:name=".Map"
+            android:exported="true"
+            android:label="MAP"
+            android:parentActivityName=".Navigation_Home"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".User_Infor"
+            android:exported="true"
+            android:label="INFORMATION OF USER"
+            android:parentActivityName=".Navigation_Home"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Admin_Infor"
+            android:exported="true"
+            android:label="Admin Information"
+            android:parentActivityName=".Admin"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Admin"
+            android:exported="false"
+            android:label="Home Admin"
+            android:parentActivityName=".Login"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DetailStorerage"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Storeage"
+            android:exported="true" />
+        <activity
+            android:name=".DetailProduct"
+            android:exported="true" />
+        <activity
+            android:name=".Admin_Product"
+            android:exported="true" />
+        <activity
+            android:name=".InforOrder"
+            android:exported="true" />
+        <activity
+            android:name=".Test"
+            android:exported="true" />
+        <activity
+            android:name=".Captcha"
+            android:exported="true" />
+        <activity
+            android:name=".Register"
+            android:exported="true" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_VerifyOTP"
+            android:exported="false" />
+        <activity
+            android:name=".OTP_Phone"
+            android:exported="true" />
+        <activity
+            android:name=".OTP_Email"
+            android:exported="false" />
+        <activity
+            android:name=".Navigation_Home"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Phone Card Market" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:label="Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="${AIzaSyAFMZUNvQZjnmeSd7AagPIOc5TdS-x7wYY}" /> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAAkNqFH4KfSa2OuDs7zFXAl3mM7pOMaJQ" />
+    </application>
+
+</manifest>
